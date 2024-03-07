@@ -7,24 +7,18 @@
     <title>Praktikum HTML</title>
 </head>
 <body>
-    <h2>Jadwal Kuliah Semester Ini</h2>
-    <table border="1">
-        <tr>
-            <th>Hari</th>
-            <th>Mata Kuliah</th>
-            <th>Waktu</th>
-        </tr>
-        <tr>
-            <td>Kamis</td>
-            <td>Pemrograman Web</td>
-            <td>18.00-21.00</td>
-        </tr>
-        <tr>
-            <td>Jumat</td>
-            <td>Keamanan Siber</td>
-            <td>19.45-22.00</td>
-        </tr>
-    
-</body>
+    <h2>Formulir Kontak</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="fullname" required><br><br>
 
+        <label for="email">Email</label>
+        <input type="email" id="email" name="emailaddr" required><br><br>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="usermassage" rows="4" required></textarea><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+</body>
 </html>
